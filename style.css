@@ -1,0 +1,10 @@
+/* bootstrap 不支持在w和50之间加md这种自适应屏幕改变的样式，所以我们自己写样式 */
+/* 主要为了input-group中的input服务，当我们缩小屏幕是，input占100%，当我们扩大屏幕的时候input占50% */
+
+@media(min-width:768px) {
+    /* 此处写的内容是指，仅当屏幕也就是media尺寸大于min-width时生效 */
+    .new-input{
+        width: 50%; 
+        /* 仅当屏幕大于768时input和btn的组合input-group的宽度是父元素的50%*/
+    }
+}
